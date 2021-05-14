@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+</head>
+<body>
+<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="">AGRI GAIN :)</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="View your cart" class="button" />
+                </fieldset>
+            </form>
+		</div>
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="login.html">Login</a></li> 
+								<li><a href="signupin.html">Sign Up</a></li>
+							</ul>
+						</div>                  
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="#">Contact Us</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Family</span>Farm</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="index.html">Bestdeals</a><i>/</i></li>
+					<li><a href="loans.html">Loans & schemes</a><i>/</i></li>
+					<li><a href="pests.html">Pest attacks</a><i>/</i></li>
+					<li><a href="weather.html">Weather conditions</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>6303279407</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">dedeepyayarlagadda2001@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+<!change here.....!>
+				<li>Fruits & Vegetables</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+			 
+			  <div class="navbar-header nav_2">
+				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			   </div> 
+			   
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li><a href="vegetables.html">Veggies & fruits</a></li>
+						<li><a href="rice.html">RICE</a></li>
+						
+						<li><a href="pulses.html">PULSES</a></li>
+						<li><a href="whe.html">WHEAT</a></li>
+						<li><a href="cashcrops.html">CASH CROPS</a></li>
+						
+						<li><a href="maize3.html">MAIZE</a></li>
+						
+						<li><a href="weather.html">WEATHER UPDATES</a></li>
+						<li><a href="pests.html">PEST SUGGESTIONS</a></li>
+						<li><a href="loans.html">LOANS & SCHEMES</a></li>
+					</ul>
+				 </div>
+			</nav>
+		</div>
+
+
+<img  src="https://www.yojanaschemehindi.com/wp-content/uploads/2019/06/Farmer-Crop-Loan-Waiver-Scheme-in-Telangana.jpg"  width="1050" height="600">
+<br>
+<br>
+<p class="para"> .  Here is a look at some of these loans in some detail.</P>
+<h4>.  Agricultural Loan: Crop Loan / Kisan Credit Card (KCC)</h4>
+<p class="des">. A crop loan is usually a short-term loan meant for seasonal financial requirements of farmers. These requirements may stem from the regular processes involved in farming such as seed purchase, sowing, weeding, raising crops and so on. Most of the expenses are of small amounts but require some form of borrowing for the farmer to meet these costs, as they usually do not have enough spare cash handy for such overheads.
+These costs are recurring in nature and require the farmers to approach the banks for finance on a regular basis. 
+<br>
+<h3>Here are some more details on the Kisan Credit Card:</h3>
+</p>
+<p class="des">
+        •	The card can be obtained by even small farmers, tenant farmers, sharecroppers and oral lessees, self help groups or joint liability groups, among others. The assessment norms have been simplified for marginal farmers.
+<br>
+	•	The banks assess the farmer’s eligibility based on land they have for cultivation. The amount of finance to which the farmer is eligible is assessed on a scale that is provided by the District Level Technical Committee in that particular district. In addition, the credit history of the farmer is also taken into account. The calculation of the limit is based on the following formula:
+(Scale of Finance Prescribed for the Crop Loan) + (Insurance Premium) x (Size of Cultivated Area) + (10% of the Limit (this is allocated for post-harvest, household or consumption requirements))+ (20% of the Card Limit for Maintenance of Farm Assets
+<br>
+	•	The card comes with a personal accident insurance option that covers any risk to the farmer such as accidental death or permanent disability.
+<br>
+	•	The Kisan Credit Card is valid for 5 years and can be used to meet both term credit as well as finance for consumables.
+<br>
+	•	Banks charge an interest of 7% per annum for one year or up to the due date for repayment, whichever is earlier. The interest rate is reduced by up to 3%, in case the outstanding amount on the card is paid back promptly. Any credit taken using the card has to be returned within a year of taking the loan. However, banks do not require the farmer to bring the outstanding amount to Nil at any point of time.
+<br>
+	•	The bank requires the farmer to provide a simple declaration on the crops raised or proposed to be raised for this agricultural loan.
+<br>
+	•	The documents needed to avail the Kisan Credit Card are a copy of ID proof, copy of the farmer’s address proof and the duly filled application form.
+<br>
+	•	The banks also provide interest on the credit balance people have on their card. In addition, there is no collateral needed for the card up to certain limits. For example, State Bank waives off collateral security for a limit of Rs. 1 lakh on this agricultural loan.
+<br>
+</P>
+<h4>Agricultural Term Loan</h4>
+<p class="des">This agricultural loan is a longer term loan than a crop loan. The loan is provided for work that is not seasonal in nature (which is covered by a crop agricultural loan) but for larger expenditures. These costs may relate to purchase of machinery, upgrade of irrigation facilities on the farm, installation of solar power or windmills to operate farm machinery, etc.
+</P>
+<h3>Here are some more details about this agricultural loan:</h3>
+<p class="des">•	Banks extend this agricultural loan to farmers based on their repayment capacity. All banks have their own set of guidelines before they approve the loan. RBI has advised banks to give this agricultural loan for up to Rs. 1 lakh without any security or collateral. The margin for loans above Rs. 1 lakh may be 15%-25% for most banks.
+<br>
+	•	The indicative unit costs for the various activities that are covered under the loan are determined by a State-level Banker’s Committee (SLBC) with relevant inputs and guidelines from NABARD. The bank and SLBC look at ground reality before they indicate a unit price band.
+<br>
+	•	This agricultural loan can be given for various reasons. Most banks have designed a specific product to cater to niche sectors or particular reasons. For instance, there are now horticulture loans, loans to dig wells, for land development, for irrigation and other allied activities. There are also all-purpose term loans that can be used for all or any such activities.
+<br>
+	•	People who are eligible for these loans include individual farmers, two or more individuals acting jointly, self-help groups and so on.
+<br>
+	•	The loans start from a few thousand rupees and may go up to Rs. 20-30 lakh based on the need and repayment capacity of the farmer.
+<br>
+	•	The tenure of this agricultural loan ranges from 3 years to 15 years.
+The interest rates are quite easy on the farmer and even private sector banks extend these terms loans at competitive rates. For instance, ICICI Bank offers its Agri Term Loans at interest rates between 8.9% and 14%.
+</p>
+<h4>Agriculture Working Capital Loan</h4>
+<p class="des">This agricultural loan helps meet the working capital requirements of farmers and other people engaged in agriculture or allied / related activities. These loans are usually used to meet small expenses that help the farmers take care of their expenses that are otherwise not covered under a crop loan / Kisan Credit Card. The agricultural loan is also extended to dealers or sellers of fertilisers, seeds, as well as providers of mechanised machinery such as tractors or harvesters on rent to farmers. Some banks provide a Kisan Credit Card with a higher OD limit instead of offering an agricultural loan for working capital requirements. This works in the same way as a Kisan Credit Card but helps meet unexpected and sometimes recurrent expenses.
+</p>
+<h4>Agricultural Gold Loan</h4>
+<p class="des">
+
+This loan is provided to farmers against a pledge of gold ornaments. It may be offered for crop cultivation or for multiple reasons. The loan helps the farmers unlock the value of their gold jewellery that is usually lying idle in the house or bank locker.
+</p>
+<h3>Here are some more details on this agricultural loan:</h3>
+<p class="des">•	Since it is secured agricultural loan, the interest rate on the loan is low. For example, banks such as State Bank of India offer these loans at an effective rate of 4% per annum (due to interest subvention). The interest rate for the loan up to Rs. 3 lakh is 7% while those who lend a loan of Rs. 3 lakh and above get the loan at 9.95%.
+<br>
+	•	The agricultural loan is usually provided for short term reasons and is usually repayable within 1-3 years. For instance, IDBI offers loan tenure from 1 month to 24 months for farmers to repay the loan, while Federal Bank offers a maximum tenure of 12 months. SBI offers a tenure of 12 months for the demand loan and 3 years for the cash credit or overdraft facility.
+<br>
+	•	The loan is characterised by minimal paperwork and a hassle-free application process. In most cases, an ID and address proofs, proof of ownership of the agricultural property for which the loan will be given and two passport photographs are enough, along with the filled application form.
+<br>
+	•	All farmers or people engaged in agriculture-related activities can take this loan. The amount of loan is dependent on the value of the gold the applicant pledges. Banks usually provide up to 75% of the market value of the gold ornaments.
+</p>
+<h4>Farm Mechanisation Loan</h4>
+<p class="des">A farm mechanisation loan is given to buy new machinery, repair / replace old ones, purchase tractors or harvesters, or do anything that makes the farmer’s job easier. Some banks provide a general purpose loan while others have categorised these loans into different types based on the end-purpose. For example, State Bank of India offers tractor loans, combine harvester loans and loans for drip irrigation.
+</p>
+<h3>Here are some details on these type of loans:</h3>
+<p class="des">
+	•	This agricultural loan is given to anyone who owns the land on which the item will be used. Some banks like SBI have also given a priority for women to be owners / part-owners of the vehicle and have included such clauses in the eligibility conditions for some loans.
+<br>
+	•	Some banks also prescribe the amount of land that the landowner should have, if they want to apply for a farm mechanisation loan. For example, State Bank of India requires that the applicant for a tractor must have at least 2 acres of farmland. IDBI, on the other hand, requires the farmer to own at least 4 acres to apply for the loan to buy a tractor of up to 35HP. Canara Bank requires applicants of a tractor loan to have 6 acres of perennially irrigated land or 12 acres of dry land in their name.
+<br>
+	•	The loan amount varies according to the need and repayment ability of the farmer. Usually, the loan may vary from say, Rs. 30,000 and may be available for up to Rs. 30 lakh or more.
+<br>
+	•	The banks usually do not charge a margin for loans of up to Rs. 1 lakh, while the margin for loans above that amount may range from 10%-25% for different banks.
+<br>
+	•	The loans are provided with and without security, with the secured loans being of higher value. In case of secured loans, banks may require hypothecation of the asset to be bought (tractor, harvester, etc.) as well as a mortgage of the land up to the value of the loan. Some loans are also provided against gold jewellery or other assets like Kisan Vikas Patra, National Savings Certificate, LIC policy, and so on.
+<br>
+The rate of interest on the agricultural loan depends on factors such as amount of contribution made by the farmer towards the loan, the type of borrowers and so on. For instance, the SBI tractor loan has an interest rate of 11.95%, while the Tatkal tractor loan interest rates are 11.20%, 10.95% and 10.55% if the margins are respectively 25%, 35% and 50%. Moreover, for the secured Stree Shakti Tractor loan it is 10.95%, while for the unsecured Stree Shakti Tractor loan it is 11.20%.
+</p>
+<h4>Horticulture Loan</h4>
+<p class="des">This agricultural loan is given for development of the land for setting up orchards or vegetable farms, for clearing of undergrowth or wild trees, for minor irrigation activities, for setting up boundary walls / fencing and other horticultural reasons.
+</p>
+<h3>Some details of these loans are given below:</h3>
+<p class="des">•	The applicant must be the owner of the land that is being cleared or must have obtained a valid lease on the land from the owner. He should have experience in the crops he intends to cultivate. Some banks ask the applicant to obtain memberships from any commodity boards set up for the development or marketing of such crops.
+<br>
+	•	The loan amount may vary from Rs. 20,000 and go up to Rs. 50 lakh. The banks usually do not ask for any security when the loan amount is up to Rs. 1 lakh but require the applicant to hypothecate the land or the crop to get the agricultural loan when the amount is more than Rs. 1 lakh.
+<br>
+	•	Most of these loans are available for a period of 1-15 years and can be repaid in annual instalments.
+</p>
+<h4>Forestry Loan</h4>
+<p class="des">This agricultural loan is given for raising crops that grow on trees. Like horticulture loans, it can be given to clear the undergrowth or wild trees, to turn barren land into cultivable land, to prepare the land by setting up irrigation channels, and so on. Criteria such as eligibility, amount of loan, interest rate, etc. are usually same as that for horticulture loans.
+<br>
+Borrowers should keep in mind that each bank offers different agriculture loans for varied needs. These products differ on criteria such as eligibility, margins, collateral, interest rates, tenure, etc. As such, they should talk to their bank branch to know more about the loans for which they are eligible and the terms and conditions on which these loans will be given to them.
+</p>
+<div>"If you want to be rich,learn not only to earn but also save money..."
+
+<div class="clearfix"></div>
+	</div>
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="w3agile_newsletter_left">
+				<h3>sign up for our newsletter</h3>
+			</div>
+			<div class="w3agile_newsletter_right">
+				<form action="#" method="post">
+					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="subscribe now">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3_footer_grid">
+				<h3>information</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="weather.html">Weather</a></li>
+					<li><a href="loans.html">Loans & schemes</a></li>
+					<li><a href="index.html">Best Deals</a></li>
+					<li><a href="pests.html">Pest attacks</a></li>
+					<li><a href="short-codes.html"></a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>policy info</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="faqs.html">FAQ</a></li>
+					<li><a href="privacy.html">privacy policy</a></li>
+					<li><a href="privacy.html">terms of use</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3></h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="pet.html"></a></li>
+					<li><a href="frozen.html"></a></li>
+					<li><a href="kitchen.html"></a></li>
+					<li><a href="products.html"></a></li>
+					<li><a href="household.html"></a></li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"> </div>
+			<div class="agile_footer_grids">
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h4>100% secure </h4>
+						<img src="images/card.png" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h5>connect with us</h5>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="wthree_footer_copy">
+				<p> </p>
+			</div>
+		</div>
+	</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+<script src="js/minicart.js"></script>
+<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+	</script>
+</body>
+</html>

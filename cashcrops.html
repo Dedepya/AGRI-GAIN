@@ -1,0 +1,793 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+</head>
+	
+<body>
+
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="">AGRI GAIN :)</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="View your cart" class="button" />
+                </fieldset>
+            </form>
+		</div>
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="login.html">Login</a></li> 
+								<li><a href="signupin.html">Sign Up</a></li>
+							</ul>
+						</div>                  
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="#">Contact Us</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop(); 
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+		 
+	});
+	</script>
+
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Family</span>Farm</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="index.html">Bestdeals</a><i>/</i></li>
+					<li><a href="loans.html">Loans & schemes</a><i>/</i></li>
+					<li><a href="pests.html">Pest attacks</a><i>/</i></li>
+					<li><a href="weather.html">Weather conditions</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>6303279407</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:dedeepyayarlagadda2001@gmail.com">dedeepyayarlagadda2001@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+<!change here.....!>
+				<li>Fruits & Vegetables</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+			 
+			  <div class="navbar-header nav_2">
+				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			   </div> 
+			   
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li><a href="vegetables.html">Veggies & fruits</a></li>
+						<li><a href="rice.html">RICE</a></li>
+						<li><a href="cashcrops.html">cashcrops</a></li>
+						
+						<li><a href="pulses.html">PULSES</a></li>
+						<li><a href="whe.html">WHEAT</a></li>
+						
+						<li><a href="maize3.html">MAIZE</a></li>
+						
+						<li><a href="weather.html">WEATHER UPDATES</a></li>
+						<li><a href="pests.html">PEST SUGGESTIONS</a></li>
+						<li><a href="loans.html">LOANS & SCHEMES</a></li>
+					</ul>
+				 </div>
+			</nav>
+		</div>
+		<div class="w3l_banner_nav_right">
+			<div class="w3l_banner_nav_right_banner5">
+				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
+			</div>
+			<div class="w3l_banner_nav_right_banner3_btm">
+			<h3 class="w3l_fruit" align:centre>EMERGENCY REQUIREMENTS</h3>
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLxp2wFiD_AWjdQl_ErVqPmm812Pd1KMqVTj3ikAz7acoNJ7UH&usqp=CAU" alt=" " class="img-responsive" />
+						<div class="mask">
+<!change here....!>
+							<h4>RICE MILL</h4>
+							<p>AGRO</p>
+						</div>
+					</div>
+					<h4>JUTE</h4>
+					<ol>
+						
+					</ol>
+				</div>
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLxp2wFiD_AWjdQl_ErVqPmm812Pd1KMqVTj3ikAz7acoNJ7UH&usqp=CAU" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>MARKET</h4>
+							<p>D-MART</p>
+						</div>
+					</div>
+					<h4>COTTON</h4>
+					<ol>
+						
+					</ol>
+				</div>
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLxp2wFiD_AWjdQl_ErVqPmm812Pd1KMqVTj3ikAz7acoNJ7UH&usqp=CAU" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Rice Mill</h4>
+							<p>Deekshith Mill</p>
+						</div>
+					</div>
+					<h4>SUGARCANE</h4>
+					<ol>
+						
+					</ol>
+<!...up to here!>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
+				<h3 class="w3l_fruit">Rice Mills & Markets</h3>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive"></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+<!change name image price....!>
+											<h4>Shiva super market</h4>
+											<a href="single.html"><img src="https://socialimages.sakalmediagroup.com/sakaltimes-prod/s3fs-public/styles/generic_md_75/public/news-story/cover-images/1sugarcane_51.jpg" " class="img-responsive" /></a>
+											<p>sugarcane(50 kg)</p>
+											<h4>kg/Rs 160.00 <span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="sugarcane" />
+													<input type="hidden" name="amount" value="160.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+					
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>Big basket</h4>
+											<a href="single.html"><img src="https://socialimages.sakalmediagroup.com/sakaltimes-prod/s3fs-public/styles/generic_md_75/public/news-story/cover-images/1sugarcane_51.jpg" " class="img-responsive" /></a>
+											<p>sugarcane(50kg)</p>
+											<h4>per/Rs 180.00 <span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="fresh sugarcane" />
+													<input type="hidden" name="amount" value="180.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>D fertilizers</h4>
+											<a href="single.html"><img src="https://lh6.googleusercontent.com/proxy/FhxPGwTydkiFYXIIaTrG0qtwADkihnl-_93WDsDQMXLHvf_hPgl6JYSxXanBkDg7G8nEZvYDWIhna8-SdxU54DX_vwzNQ6rLD678DUz4hfQ0zW0MAbEN-1xS5IIgP00nx15h9jHx" alt=" " class="img-responsive" /></a>
+											
+											<p>Cotton(50 kg)</p>
+											<h4>kg/Rs 150.00 <span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="cotton" />
+													<input type="hidden" name="amount" value="150" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="https://cdn.britannica.com/60/190360-050-0A5E06CB/Cocoa-powder-cocoa-beans.jpg" alt=" " class="img-responsive" /></a>
+											<p>cocoa(15 kg)</p>
+											<h4>kg/Rs 25<span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="cocoa" />
+													<input type="hidden" name="amount" value="25.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+				<h3 class="w3l_fruit"></h3>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>S fertilizers</h4>
+											<a href="#"><img src="https://lh6.googleusercontent.com/proxy/FhxPGwTydkiFYXIIaTrG0qtwADkihnl-_93WDsDQMXLHvf_hPgl6JYSxXanBkDg7G8nEZvYDWIhna8-SdxU54DX_vwzNQ6rLD678DUz4hfQ0zW0MAbEN-1xS5IIgP00nx15h9jHx" /></a>
+											<p>cotton (50kg)</p>
+											<h4>Kg/Rs 130.00 <span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="cotton" />
+													<input type="hidden" name="amount" value="130.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>shiva jute mill</h4>
+											<a href="single.html"><img src="https://1.bp.blogspot.com/-5tIOqXjLxYQ/XPYmJg3G5AI/AAAAAAAAmso/avbbWl1Xlb82luK2AXLIEXQLEPwbHOGeACLcBGAs/s1600/features-of-jute-fiber.jpg" alt=" " class="img-responsive" /></a>
+											<p>jute(100 kg)</p>
+											<h4>Kg/Rs 40.00 <span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="jute" />
+													<input type="hidden" name="amount" value="40.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>Krish jute Mill</h4>
+											<a href="single.html"><img src="https://1.bp.blogspot.com/-5tIOqXjLxYQ/XPYmJg3G5AI/AAAAAAAAmso/avbbWl1Xlb82luK2AXLIEXQLEPwbHOGeACLcBGAs/s1600/features-of-jute-fiber.jpg" alt=" " class="img-responsive" /></a>
+											<p>fresh brown rice ( 100 kg)</p>
+											<h4>Kg/Rs 50.00 <span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="fresh brown rice" />
+													<input type="hidden" name="amount" value="50.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>sai oil mill</h4>
+											<a href="single.html"><img src="https://www.thedollarbusiness.com/assets/articles/2015/10/shutterstock_93239791_650.jpg" alt=" " class="img-responsive" /></a>
+											<p>fresh oil seeds(500 kg)</p>
+											<h4>Kg/Rs 35.00 <span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="fresh oil seeds" />
+													<input type="hidden" name="amount" value="35.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+				<h3 class="w3l_fruit"></h3>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>v oil mill</h4>
+											<a href="single.html"><img src="https://www.thedollarbusiness.com/assets/articles/2015/10/shutterstock_93239791_650.jpg" " class="img-responsive" /></a>
+											<p>oil seeds (25 kg)</p>
+											<h4>Kg/Rs40.00 <span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="oil seeds" />
+													<input type="hidden" name="amount" value="40.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>Abhay super market</h4>
+											<a href="single.html"><img src="https://cdn.britannica.com/60/190360-050-0A5E06CB/Cocoa-powder-cocoa-beans.jpg" alt=" " class="img-responsive" /></a>
+											<p>Cocoa(10 kg)</p>
+											<h4>Kg/Rs 36<span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="cocoa" />
+													<input type="hidden" name="amount" value="36.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>heritage fresh</h4>
+											<a href="single.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzHGSZubPm4LTgRuXDgOhUPPjg7d87zhhDnSvNcsT7gEkfp26f&usqp=CAU" alt=" " class="img-responsive" /></a>
+											<p>cocoa(50 kg)</p>
+											<h4>Kg/Rs 25<span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="fresh cocoa" />
+													<input type="hidden" name="amount" value="25.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+										<h4>Arogya super market</h4>
+											<a href="single.html"><img src="https://cdn.britannica.com/60/190360-050-0A5E06CB/Cocoa-powder-cocoa-beans.jpg" " class="img-responsive" /></a>
+											<p>cocoa(100 kg)</p>
+											<h4>Kg/Rs 40<span></span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="fresh cocoa seeds" />
+													<input type="hidden" name="amount" value="40.00" />
+													<input type="hidden" name="discount_amount" value="" />
+													<input type="hidden" name="currency_code" value="" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="w3agile_newsletter_left">
+				<h3>sign up for our newsletter</h3>
+			</div>
+			<div class="w3agile_newsletter_right">
+				<form action="#" method="post">
+					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="submit" value="subscribe now">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3_footer_grid">
+				<h3>information</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="weather.html">Weather</a></li>
+					<li><a href="loans.html">Loans & schemes</a></li>
+					<li><a href="index.html">Best Deals</a></li>
+					<li><a href="pests.html">Pest attacks</a></li>
+					<li><a href="short-codes.html"></a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>policy info</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="faqs.html">FAQ</a></li>
+					<li><a href="privacy.html">privacy policy</a></li>
+					<li><a href="privacy.html">terms of use</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3></h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="pet.html"></a></li>
+					<li><a href="frozen.html"></a></li>
+					<li><a href="kitchen.html"></a></li>
+					<li><a href="products.html"></a></li>
+					<li><a href="household.html"></a></li>
+				</ul>
+			</div>
+			
+			<div class="clearfix"> </div>
+			<div class="agile_footer_grids">
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h4>100% secure </h4>
+						<img src="images/card.png" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h5>connect with us</h5>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="wthree_footer_copy">
+				<p> </p>
+			</div>
+		</div>
+	</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+<script src="js/minicart.js"></script>
+<script>
+		paypal.minicart.render();
+
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
+	</script>
+</body>
+</html>

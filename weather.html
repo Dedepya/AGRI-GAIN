@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+html,
+body {
+    background-color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 5px 30px;
+    width: 290px;
+    height: 470px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+    -webkit-animation: open 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+@-webkit-keyframes open {
+    from {
+        padding: 0 30px;
+        height: 0;
+    }
+    to {
+        height: 470px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    position: relative;
+}
+
+h1 {
+    float: right;
+    color: #666;
+    font-weight: 300;
+    font-size: 6.59375em;
+    line-height: .2em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2.25em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+h3 {
+    float: left;
+    margin-right: 33px;
+    color: #777;
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .1s;
+}
+
+span {
+    margin-left: 24px;
+    color: #999;
+    font-weight: 300;
+}
+
+span span {
+    margin-left: 0;
+}
+
+.dot {
+    font-size: .9em;
+}
+
+.sky {
+    position: relative;
+    margin-top: 108px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #03A9F4;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
+}
+
+.sun {
+    position: relative;
+    top: -3px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FFEB3B;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .5s;
+}
+
+.cloud {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .7s;
+}
+
+.cloud:before,
+.cloud:after {
+    position: absolute;
+    display: block;
+    content: "";
+}
+
+.cloud:before {
+    margin-left: -10px;
+    width: 51px;
+    height: 18px;
+    background: #fff;
+}
+
+.cloud:after {
+    position: absolute;
+    top: -10px;
+    left: -22px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 50px -6px 0 6px #fff, 25px -19px 0 10px #fff;
+}
+
+table {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(1) td:nth-child(2),
+tr:nth-child(1) td:nth-child(3),
+tr:nth-child(1) td:nth-child(4),
+tr:nth-child(1) td:nth-child(5) {
+    padding-bottom: 32px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .7s;
+}
+
+tr:nth-child(2) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2),
+tr:nth-child(2) td:nth-child(3),
+tr:nth-child(2) td:nth-child(4),
+tr:nth-child(2) td:nth-child(5) {
+    padding-bottom: 7px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .9s;
+}
+
+tr:nth-child(3) td:nth-child(1),
+tr:nth-child(3) td:nth-child(2),
+tr:nth-child(3) td:nth-child(3),
+tr:nth-child(3) td:nth-child(4),
+tr:nth-child(3) td:nth-child(5) {
+    padding-bottom: 7px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .9s;
+}
+
+tr:nth-child(2),
+tr:nth-child(3) {
+    font-size: .9em;
+}
+
+tr:nth-child(3) {
+    color: #999;
+}
+
+@-webkit-keyframes up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(15px);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(15px);
+    }
+    99% {
+        -webkit-animation-play-state: paused;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.p
+{
+color:red;
+}
+</style>
+</head>
+
+<body>
+<h style="color:blue" text-align:center;> <b>WEATHER UPDATES</h>
+<div class="card">
+
+        <h2>Hyderabad</h2>
+        <h3>Cloudy<span>Wind 10km/h <span class="dot">•</span> Precip 0%</span></h3>
+        <h1>36°</h1>
+        <div class="sky">
+            <div class="sun"></div>
+            <div class="cloud">
+                <div class="circle-small"></div>
+                <div class="circle-tall"></div>
+                <div class="circle-medium"></div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td>TUE</td>
+                <td>WED</td>
+                <td>THU</td>
+                <td>FRI</td>
+                <td>SAT</td>
+            </tr>
+            <tr>
+                <td>40°</td>
+                <td>42°</td>
+                <td>36°</td>
+                <td>38°</td>
+                <td>37°</td>
+            </tr>
+            <tr>
+                <td>17°</td>
+                <td>22°</td>
+                <td>19°</td>
+                <td>23°</td>
+                <td>19°</td>
+            </tr>
+        </table>
+    </div>
+<br>
+<br>
+<br>
+<p> <b> . For wheat, the typical optimum temperature range for photosynthesis is between 15 and 30 C. Heat stress increases when temperatures are between 30 and 40 C; above 40 C, the photosynthetic processes can permanently break down.</p><br>
+<p><b>. When rice plants are exposed to temperatures higher than 35 °C, injuries due to heat occur according to growth stages.</p><br>
+<p><b>. Tea is a leading beverage crop of India. Rainfall – Well distributed rainfall between 150 cms to 250 cms. It cannot withstand long spells of dry conditions.</p><br>
+<p><b >. High temperatures affect plant growth in numerous ways. The most obvious are the effects of heat on photosynthesis, in which plants use carbon dioxide to produce oxygen, and respiration, an opposite process in which plants use oxygen to produce carbon dioxide.</p><br>
+<p>. Climate determines suitability of a crop to a particular region while weather plays a major role in the productivity of a crop in the region.</p><br>
+<p>. The excess or shortage of elements of weather and climate exerts a negative influence on crop growth, development and final yield.</p><br>
+<p>. Due to complexity of environment in  which a crop is grown, it is difficult to assign an optimum value of climatic element for maximum crop productivity.</p>
+</body>
+</html>
